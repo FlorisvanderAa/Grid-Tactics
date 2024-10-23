@@ -45,6 +45,6 @@ public class SingleTile : MonoBehaviour, IInteractable
     // Implement the Interact method (for future purposes)
     public void Interact()
     {
-        Debug.Log("Tile interacted");
+        SpawnManager.Instance.PlacePlayer(this.transform);
     }
 }
